@@ -1,0 +1,101 @@
+.bg{
+  background:lightblue;
+  align-items: center;
+  padding: 20px;
+  height: 100vh;
+}
+.container {
+    display: flex;
+    height: 50vh;
+    width: 730px;
+    margin-left: 20px;
+
+}
+.child-div-1 {
+    background: gold;
+    width: 90vh;
+}
+  
+  
+  .child-div-2 {
+    background: #ee6;
+    height: 100%;
+    width: 30vh;
+    position:relative;
+  }
+  
+  .child-div-3 {
+    background: #fdd;
+    margin-left: 20px;
+    height: 100%;
+    width: 20vh;
+    position:relative;
+  }
+  .child-div-3 p {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    color: brown;
+  }
+  
+  .right-card-one{
+    height: 50%;
+    width: 100%;
+    background: yellowgreen;
+  
+  }
+  .right-card-two{
+    height: 50%;
+    width: 100%;
+    background: white;
+  }
+  .level{
+    font-size: 4vh;
+    font-weight: bold;
+    color: #A0A0A0;
+  }
+  .xp{
+    font-style: italic;
+    font-size: 4vh;
+    color:#364FC0;
+  }
+  .head{
+    height: 25%;
+    background: white;
+    font-weight:bold;
+    font-size: large;
+    color: #736e6e;
+  }
+  .info{
+    height: 75%;
+    background: white;
+    padding-left: 40px; 
+  }
+  .info-text-1{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.info-text-2{
+  font-size: 15px;
+  font-weight: 700;
+}
+.left-info{
+    float: left;
+    height: 100%;
+    background: white;
+    padding-right: 100px;
+    
+}
+.right-info
+{
+    float: right;
+    height: 100%;
+    background: white;
+}
+.head-2{
+  background: white;
+  font-weight:bold;
+  color: #A0A0A0;
+}
