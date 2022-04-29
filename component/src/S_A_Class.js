@@ -2,9 +2,17 @@ import React from "react";
 import './S_A_Class.css';
 import Image from './Ellipse 24.png';
 import Data from './info.json';
+import Data_1 from './mock-data.json';
+import { ScrollView } from 'react-native';
+import *as FaIcons from 'react-icons/fa'
+import {useState} from "react";
+
 
 
 function S_A_Class() {
+  const [query, setQuery] = useState("")
+
+
     return (
       <div className="main">
         <div className="left-side"></div>
@@ -88,21 +96,154 @@ function S_A_Class() {
                      <div className="chapter_list_name">
                       Chapters
                      </div>
+                                           
                      <div className="chapter_lists">
-                        <div className="chapter_card">
-                          <div className="chapter_cnt">1</div>
-                          <div className="chpater_no"><button>Chapter 1</button></div>
-                          <div className="chapter_nme">Measurement</div>
+                       <div className="chapter_card">
+                        {
+                          Data.map(post =>{
+                            return(
+                              <>
+                              <div className="chapter_cnt">{post.index}</div>
+                              <div className="chpater_no">
+                                  <button>
+                                    {post.chp_id}
+                                  </button>
+                              </div>
+                              <div className="chapter_nme">{post.chp_name}</div>
+
+                              </>
+                              
+                          
+                            )
+                          })
+                         }
                           <div className="open_chpater"><button>Open Chapter</button></div>
                         </div>
-                        <div className="chapter_card"></div>
-                        <div className="chapter_card"></div>
-                        <div className="chapter_card"></div>
+                        <div className="chapter_card">
+                        {
+                          Data.map(post =>{
+                            return(
+                              <>
+                              <div className="chapter_cnt">{post.index}</div>
+                              <div className="chpater_no">
+                                  <button>
+                                    {post.chp_id}
+                                  </button>
+                              </div>
+                              <div className="chapter_nme">{post.chp_name}</div>
+
+                              </>
+                              
+                          
+                            )
+                          })
+                         }
+                          <div className="open_chpater"><button>Open Chapter</button></div>
+                        </div>
+                        <div className="chapter_card">
+                        {
+                          Data.map(post =>{
+                            return(
+                              <>
+                              <div className="chapter_cnt">{post.index}</div>
+                              <div className="chpater_no">
+                                  <button>
+                                    {post.chp_id}
+                                  </button>
+                              </div>
+                              <div className="chapter_nme">{post.chp_name}</div>
+
+                              </>
+                              
+                          
+                            )
+                          })
+                         }
+                          <div className="open_chpater"><button>Open Chapter</button></div>
+                        </div>
+                        <div className="chapter_card">
+                        {
+                          Data.map(post =>{
+                            return(
+                              <>
+                              <div className="chapter_cnt">{post.index}</div>
+                              <div className="chpater_no">
+                                  <button>
+                                    {post.chp_id}
+                                  </button>
+                              </div>
+                              <div className="chapter_nme">{post.chp_name}</div>
+
+                              </>
+                              
+                          
+                            )
+                          })
+                         }
+                          <div className="open_chpater"><button>Open Chapter</button></div>
+                        </div>
+                        <div className="chapter_card">
+                        {
+                          Data.map(post =>{
+                            return(
+                              <>
+                              <div className="chapter_cnt">{post.index}</div>
+                              <div className="chpater_no">
+                                  <button>
+                                    {post.chp_id}
+                                  </button>
+                              </div>
+                              <div className="chapter_nme">{post.chp_name}</div>
+
+                              </>
+                              
+                          
+                            )
+                          })
+                         }
+                          <div className="open_chpater"><button>Open Chapter</button></div>
+                        </div>
+                       
                      </div>
+
                      
                  </div>  
                  <div className="student-info">
+                        <div className="chapter_name" style={{color:"white",paddingLeft:'20px'}}>
+                         <div style={{float:'left',marginRight:'80px'}}>Students</div>
+                         <FaIcons.FaUserPlus/>                   
+                        </div>
+                        <div>
+                          <input placeholder="Find Student" onChange={event => setQuery(event.target.value)} />
+                        </div>
+                        <div className="frnd_active">
 
+                        {
+                             Data_1.filter(post => {
+                              if (query === '') {
+                                return post;
+                              } else if (post.title.toLowerCase().includes(query.toLowerCase())) {
+                                return post;
+                              }
+                            }).map((post,id) => {
+                              return(                              
+                              <div className="box" key={post.id}>
+                                <p > 
+                                  {post.index}
+                                </p>
+                                <div className="picture_user_f"></div>
+                                <text>
+                                  {post.name}
+                                </text>
+                              </div>
+                            
+                              
+                          
+                            )
+                          })
+                         }
+                          
+                        </div>
                  </div>
               </div>
           </div>

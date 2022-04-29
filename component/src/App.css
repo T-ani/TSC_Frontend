@@ -23,18 +23,8 @@
 .link:hover {
    color: violet
 }
-.header{
-  min-height: 130px;
-  max-width: 600rem;
-  background-color: black;
-  color: white;
-  text-align: center;
-  place-items: center;  
-  justify-content: center;
-  vertical-align: middle;  
-}
 .header_2{
-  min-height: 130px;
+  min-height: 20vh;
   max-width: 600rem;
   background-color: white;
   color: white;
@@ -44,7 +34,7 @@
   vertical-align: middle;
 }
 .header_3{
-  min-height: 130px;
+  min-height: 20vh;
   max-width: 600rem;
   background-color: black;
   color: white;
@@ -62,7 +52,7 @@
 }
 .inside_next
 {
-  min-height: 292px;
+  min-height: 20vh;
   max-width: 600rem;
   background-color:white;
   text-align: center;
@@ -109,7 +99,7 @@
    font-size: 40px;
  }
  .part_1,.part_2,.part_3{
-   min-height: 130px;
+   min-height: 20vh;
  }
 .part_1{
   background-color: black;

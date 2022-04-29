@@ -1,5 +1,9 @@
-{
-    "index":1,
-    "chp_num":1,
-    "chp_nme":"Measurement"
-}
+[
+    {
+        "index":1,
+        "chp_id":2,
+        "chp_name":"hello hello hello hello"
+    }
+    
+    
+]

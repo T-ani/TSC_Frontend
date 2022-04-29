@@ -6,11 +6,10 @@ import { Link } from 'react-router-dom';
 function About() {
   return (
       <div >    
-        <div>
-             <div className='part_1'><text>Hello</text></div>
+        <div className='header_1'>
+             <div className='part_1'></div>
              <div className='part_2'><Link to="/new_page" className='link'><FaIcons.FaBars/></Link></div>
-             <div className='part_3'><text>About Us</text></div>
-
+             <div className='part_3'><text>About Us</text></div>             
         </div>
         <div class="centered">
              <text className='inside_next'>
